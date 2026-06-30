@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 st.title("Coffee Product Optimization Dashboard")
 st.write("Interactive analytics for revenue and product performance")
-df=pd.read_csv(r"C:\\Users\\lenovo\\Downloads\\Afficionado Coffee Roasters.csv")
+df=pd.read_csv("Afficionado Coffee Roasters.csv")
 st.sidebar.header("Dashboard Filters")
 category=st.sidebar.selectbox("Select Category",["All"]+list(df["product_category"].unique()))
 if category !="All":
